@@ -6,7 +6,6 @@
 
 :root {
     --header-height: 3.5rem;
-    /*========== Colors ==========*/
     --first-color: hsl(31, 100%, 70%);
     --button-color: hsl(0, 0%, 17%);
     --button-color-alt: hsl(0, 0%, 21%);
@@ -16,7 +15,6 @@
     --body-color: hsl(0, 0%, 99%);
     --container-color: #fff;
     --border-color: hsl(0, 0%, 94%);
-    /*========== Font and typography ==========*/
     --body-font: 'Roboto', sans-serif;
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -25,10 +23,8 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
-    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-bold: 700;
-    /*========== Margenes Bottom ==========*/
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
     --mb-1: 1rem;
@@ -36,7 +32,6 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-    /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
 }
@@ -53,8 +48,6 @@
     }
 }
 
-
-/*=============== BASE ===============*/
 
 * {
     box-sizing: border-box;
@@ -77,7 +70,6 @@ body {
     margin: 0;
     background-color: var(--body-color);
     color: var(--text-color);
-    /*For animation dark mode*/
     transition: .4s;
 }
 
@@ -107,13 +99,6 @@ button {
     border: none;
     outline: none;
 }
-
-
-/*=============== THEME ===============*/
-
-
-/*========== Variables Dark theme ==========*/
-
 body.dark-theme {
     --first-color: hsl(31, 76%, 74%);
     --button-color: hsl(0, 0%, 24%);
@@ -125,20 +110,12 @@ body.dark-theme {
     --border-color: hsl(0, 0%, 20%);
 }
 
-
-/*========== Button Dark/Light ==========*/
-
 .change-theme {
     color: var(--title-color);
     font-size: 1.25rem;
     cursor: pointer;
 }
 
-
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
 
 .dark-theme .change-theme,
 .dark-theme .nav__toggle,
@@ -161,8 +138,6 @@ body.dark-theme {
     background: hsl(0, 0%, 30%);
 }
 
-
-/*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
     max-width: 1024px;
@@ -204,8 +179,6 @@ body.dark-theme {
 }
 
 
-/*=============== HEADER & NAV ===============*/
-
 .header {
     width: 100%;
     background: transparent;
@@ -213,7 +186,6 @@ body.dark-theme {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    /*For animation dark mode*/
     transition: .4s;
 }
 
@@ -297,14 +269,12 @@ body.dark-theme {
 }
 
 
-/* Show menu */
 
 .show-menu {
     right: 0;
 }
 
 
-/* Change background header */
 
 .scroll-header {
     background-color: var(--body-color);
@@ -312,14 +282,13 @@ body.dark-theme {
 }
 
 
-/* Active link */
+
 
 .active-link {
     color: var(--first-color);
 }
 
 
-/*=============== HOME ===============*/
 
 .home__container {
     position: relative;
@@ -389,7 +358,6 @@ body.dark-theme {
 }
 
 
-/*=============== BUTTONS ===============*/
 
 .button {
     display: inline-block;
@@ -418,7 +386,6 @@ body.dark-theme {
 }
 
 
-/*=============== FEATURED ===============*/
 
 .featured__container {
     row-gap: 2.5rem;
@@ -490,7 +457,6 @@ body.dark-theme {
 }
 
 
-/*=============== STORY ===============*/
 
 .story__container {
     row-gap: 7.5rem;
@@ -526,7 +492,6 @@ body.dark-theme {
 }
 
 
-/*=============== PRODUCTS ===============*/
 
 .products__container {
     grid-template-columns: repeat(2, 1fr);
@@ -581,8 +546,6 @@ body.dark-theme {
     box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
 }
 
-
-/*=============== TESTIMONIAL ===============*/
 
 .testimonial__container {
     row-gap: 4rem;
@@ -668,7 +631,6 @@ body.dark-theme {
 }
 
 
-/* Swiper class */
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -689,7 +651,6 @@ body.dark-theme {
 }
 
 
-/*=============== NEW ===============*/
 
 .new__card {
     position: relative;
@@ -767,7 +728,6 @@ body.dark-theme {
 }
 
 
-/*=============== NEWSLETTER ===============*/
 
 .newsletter__bg {
     background-color: var(--first-color);
@@ -801,7 +761,6 @@ body.dark-theme {
 }
 
 
-/*=============== FOOTER ===============*/
 
 .footer__container {
     row-gap: 2rem;
@@ -852,7 +811,6 @@ body.dark-theme {
 }
 
 
-/*=============== SCROLL UP ===============*/
 
 .scrollup {
     position: fixed;
@@ -877,14 +835,13 @@ body.dark-theme {
 }
 
 
-/* Show Scroll Up*/
+
 
 .show-scroll {
     bottom: 3rem;
 }
 
 
-/*=============== SCROLL BAR ===============*/
 
 ::-webkit-scrollbar {
     width: .6rem;
@@ -896,7 +853,6 @@ body.dark-theme {
 }
 
 
-/*=============== CART ===============*/
 
 .cart {
     position: fixed;
@@ -1007,7 +963,6 @@ body.dark-theme {
 }
 
 
-/* Show cart */
 
 .show-cart {
     right: 0;
